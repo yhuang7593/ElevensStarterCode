@@ -24,6 +24,7 @@ public class Deck {
      * The next card to be dealt is at size - 1.
      */
     private int size;
+    private int undealt;
 
 
     /**
@@ -35,7 +36,9 @@ public class Deck {
      * @param values is an array containing all of the card point values.
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		String[] suits={"A", "B", "C"};
+		String[] ranks={"Giraffe", "Lion"};
+		int[] values={2,1,6};
     }
 
 
@@ -44,7 +47,12 @@ public class Deck {
      * @return true if this deck is empty, false otherwise.
      */
     public boolean isEmpty() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		if(undealt==0){
+		    return true;
+        }
+        else{
+            return false;
+        }
     }
 
     /**
@@ -52,7 +60,7 @@ public class Deck {
      * @return the number of undealt cards in this deck.
      */
     public int size() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		size=
     }
 
     /**
