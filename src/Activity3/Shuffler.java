@@ -55,6 +55,14 @@ public class Shuffler {
 	k=0;
 	for(j=0,j<cards.length/2,j++){
 		cards[j]=temp;
+		cards[j]=shuffled[k];
+		k=k+2;
+	}
+	k=1;
+	for(j=0,j<cards.length/c,j++){
+		cards[j]=temp;
+		cards[j]=shuffled[k];
+		k=k+2;	
     }
 
     /**
