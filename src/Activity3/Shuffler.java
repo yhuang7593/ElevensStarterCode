@@ -77,7 +77,13 @@ public class Shuffler {
      * @param values is an array of integers simulating cards to be shuffled.
      */
     public static void selectionShuffle(int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+	int [] shuffled={};
+	for(k=0,k<50,k++){
+		if (Cards[j]!=empty){
+		int j=rrand.nextint(50);
+		Cards[j]==shuffled[k];
+		Cards[j]==empty;
+		}				
     }
 }
 
