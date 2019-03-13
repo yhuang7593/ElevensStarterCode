@@ -37,12 +37,14 @@ public class Deck {
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
 	Cards=new ArrayList<Card>();
-	    for(i=0, i<ranks.length,i++)
+	    for(i=0, i<ranks.length,i++){
 		for(j=0, j<suits.length,j++){
 		Card card= new card(ranks[i], suits[j], values[i]);
 	    	Card.adds(card);
 		}
-	    size=Cards.size;	    
+	    size=Cards.size;	   
+	    }
+	    shuffled();
     }
 
 
